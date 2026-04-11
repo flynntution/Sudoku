@@ -41,7 +41,6 @@ public class Board {
         System.out.println();
     }
     
-    // Returns true if given num is found in row
     public boolean inRow(int row, int num) {
         for (int cell : board[row]) {
             if (cell == num)
@@ -50,7 +49,6 @@ public class Board {
         return false;
     }
     
-    // Returns true if given num is found in col
     public boolean inCol(int col, int num) {
         for (int i = 0; i < board.length; i ++) {
             if (board[i][col] == num)
@@ -59,7 +57,6 @@ public class Board {
         return false;
     }
     
-    // Returns true if given num is found in 3x3 square
     public boolean inSquare(int row, int col, int num) {
         int rowStart = row/3*3;
         int colStart = col/3*3;
